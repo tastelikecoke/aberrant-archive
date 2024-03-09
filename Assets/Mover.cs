@@ -4,32 +4,35 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
+    public Animator animator;
+    public Camera cam;
+    public Transform model;
+    private Vector3 cameraOffset;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        cameraOffset = cam.transform.position - transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
+        cam.transform.position = cameraOffset + model.position;
         if(Input.GetKeyDown(KeyCode.W))
         {
-            GetComponent<Animator>().SetBool("Run", true);
-            
+            animator.SetBool("Run", true);
         }
         if(Input.GetKeyUp(KeyCode.W))
         {
-            GetComponent<Animator>().SetBool("Run", false);
-            
+            animator.SetBool("Run", false);
         }
         if(Input.GetKey(KeyCode.A))
         {
-            transform.rotation = transform.rotation * Quaternion.Euler(0,-1f, 0);
+            model.rotation = model.rotation * Quaternion.Euler(0,-1f, 0);
         }
         if(Input.GetKey(KeyCode.D))
         {
-            transform.rotation = transform.rotation * Quaternion.Euler(0,1f, 0);
+            model.rotation = model.rotation * Quaternion.Euler(0,1f, 0);
         }
     }
 }
