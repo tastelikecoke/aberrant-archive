@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Game/Scenes/Dialogue.unity
+    guid: 1a38669ef7d414f479f1c82a25a9294d
+  - enabled: 1
+    path: Assets/Game/Scenes/Gacha.unity
+    guid: 54479a1e88f909f42af9ae69ba5438e6
+  - enabled: 1
+    path: Assets/Game/Scenes/Game.unity
+    guid: fe1f5ecdb43828644b58471867f68e76
   m_configObjects: {}
