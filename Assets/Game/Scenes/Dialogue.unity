@@ -657,8 +657,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Sensei...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bca0aac153f65b04794a0b71d86e85ff, type: 2}
+  m_sharedMaterial: {fileID: 7442861812864736981, guid: bca0aac153f65b04794a0b71d86e85ff, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1035,8 +1035,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Usagi
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bca0aac153f65b04794a0b71d86e85ff, type: 2}
+  m_sharedMaterial: {fileID: 7442861812864736981, guid: bca0aac153f65b04794a0b71d86e85ff, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
