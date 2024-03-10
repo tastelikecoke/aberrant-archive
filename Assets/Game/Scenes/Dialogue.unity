@@ -1309,6 +1309,9 @@ MonoBehaviour:
   wordText: {fileID: 724207135}
   optionText: {fileID: 428017290}
   optionPanel: {fileID: 415561424}
+  spriteImage: {fileID: 1209202980}
+  pout: {fileID: 21300000, guid: 91c88d76a898d5844a92444efc0f9fa7, type: 3}
+  unpout: {fileID: 21300000, guid: 960146d321e41fb469c3ac2e4f0f1c56, type: 3}
   anim: {fileID: 1360710203}
   triggerThing: 0
 --- !u!95 &1360710203

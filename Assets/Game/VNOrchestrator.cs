@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class VNOrchestrator : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class VNOrchestrator : MonoBehaviour
     public TMP_Text wordText;
     public TMP_Text optionText;
     public GameObject optionPanel;
+    public Image spriteImage;
+    public Sprite pout;
+    public Sprite unpout;
     public Animator anim;
     public bool triggerThing = false;
     public void Start()
@@ -35,10 +39,13 @@ public class VNOrchestrator : MonoBehaviour
         // What is the aberration?
         yield return ShowOptionCR("What is an aberration?");
         // 
+        spriteImage.sprite = pout;
         yield return PlayDialogueCR("Usagi", "Are you still half asleep, Sensei?");
         yield return WaitForClickCR();
+        spriteImage.sprite = unpout;
         yield return PlayDialogueCR("Usagi", "Aberration is a departure from what is normal, usual, or expected, typically one that is unwelcome.");
         yield return WaitForClickCR();
+        spriteImage.sprite = pout;
         yield return PlayDialogueCR("Usagi", "You should know this!  We were on our way to the aberrant archives after all.");
         yield return WaitForClickCR();
         // 
@@ -46,13 +53,10 @@ public class VNOrchestrator : MonoBehaviour
         yield return ShowOptionCR("What is the aberrant archives?");
         yield return PlayDialogueCR("Usagi", "How have you forgotten that Sensei? Aberrant Archive is the title of the game!");
         yield return WaitForClickCR();
+        spriteImage.sprite = unpout;
         yield return PlayDialogueCR("Usagi", "We're supposed to secure, contain and protect all the aberrations so that they wouldn't hurt anyone in public!");
         yield return WaitForClickCR();
-        yield return PlayDialogueCR("Usagi", "");
-        yield return WaitForClickCR();
-        yield return PlayDialogueCR("Usagi", "let's make to sure you get some more sleep once we get back home, Sensei!");
-        yield return WaitForClickCR();
-        yield return PlayDialogueCR("Usagi", "*Pout*");
+        yield return PlayDialogueCR("Usagi", "Let's make to sure you get some more sleep once we get back home, Sensei!");
         yield return WaitForClickCR();
         anim.SetBool("Fade", true);
         yield return PlayDialogueCR("Director", "Cut.");
