@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Mover : MonoBehaviour
 {
@@ -33,6 +34,12 @@ public class Mover : MonoBehaviour
         if(Input.GetKey(KeyCode.D))
         {
             model.rotation = model.rotation * Quaternion.Euler(0,1f, 0);
+        }
+
+        if (model.position.y < -50f)
+        {
+            
+            SceneManager.LoadScene("Gacha");
         }
     }
 }
