@@ -12,7 +12,7 @@ public class ParticleActivator : MonoBehaviour
     }
     void AfterActivate()
     {
-        psystem.Stop();
+        //psystem.Stop();
         whiteOut.SetTrigger("Begin");
 
     }
