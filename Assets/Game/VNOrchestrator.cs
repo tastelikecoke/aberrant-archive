@@ -40,17 +40,20 @@ public class VNOrchestrator : MonoBehaviour
         yield return ShowOptionCR("What is an aberration?");
         // 
         spriteImage.sprite = pout;
+        anim.SetTrigger("Jump");
         yield return PlayDialogueCR("Usagi", "Are you still half asleep, Sensei?");
         yield return WaitForClickCR();
         spriteImage.sprite = unpout;
         yield return PlayDialogueCR("Usagi", "Aberration is a departure from what is normal, usual, or expected, typically one that is unwelcome.");
         yield return WaitForClickCR();
         spriteImage.sprite = pout;
+        anim.SetTrigger("Jump");
         yield return PlayDialogueCR("Usagi", "You should know this!  We were on our way to the aberrant archives after all.");
         yield return WaitForClickCR();
         // 
         // What is the aberrant archives?
         yield return ShowOptionCR("What is the aberrant archives?");
+        anim.SetTrigger("Jump");
         yield return PlayDialogueCR("Usagi", "How have you forgotten that Sensei? Aberrant Archive is the title of the game!");
         yield return WaitForClickCR();
         spriteImage.sprite = unpout;
