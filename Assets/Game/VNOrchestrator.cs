@@ -63,15 +63,9 @@ public class VNOrchestrator : MonoBehaviour
         yield return PlayDialogueCR("Usagi", "Let's make to sure you get some more sleep once we get back home, Sensei!");
         yield return WaitForClickCR();
         anim.SetBool("Fade", true);
-        yield return PlayDialogueCR("TODO Temp!! Replace this", "[Fade out]");
+        yield return PlayDialogueCR("TODO", "[Fade out]");
         yield return WaitForClickCR();
-        yield return PlayDialogueCR("TODO Temp!! Replace this", "[Fade in new background]");
-        yield return WaitForClickCR();
-        yield return PlayDialogueCR("TODO Temp!! Replace this", "[Shot with Character2]");
-        yield return WaitForClickCR();
-        yield return PlayDialogueCR("TODO Temp!! Replace this", "[Dialogue with Character2]");
-        yield return WaitForClickCR();
-        yield return PlayDialogueCR("TODO Temp!! Replace this", "[Load next gameplay scene befor");
+        yield return PlayDialogueCR("TODO", "[Load next gameplay scene befor");
         yield return null;
         SceneManager.LoadScene("Game");
     }
