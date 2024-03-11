@@ -15,6 +15,7 @@ public class VNOrchestrator : MonoBehaviour
     public Sprite pout;
     public Sprite unpout;
     public Animator anim;
+    public GameObject arrowDowner;
     public bool triggerThing = false;
     public void Start()
     {
@@ -78,7 +79,9 @@ public class VNOrchestrator : MonoBehaviour
     public IEnumerator WaitForClickCR()
     {
         triggerThing = false;
+        arrowDowner.SetActive(true);
         yield return new WaitUntil(() => triggerThing);
+        arrowDowner.SetActive(false);
     }
 
     public IEnumerator PlayDialogueCR(string nameTag, string words)

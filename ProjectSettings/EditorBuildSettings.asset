@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Scenes/Gacha.unity
     guid: 54479a1e88f909f42af9ae69ba5438e6
+  - enabled: 1
+    path: Assets/Game/Scenes/NetworkCheck.unity
+    guid: cf75e00e56efb2f47bf00fd0a19af11d
   m_configObjects: {}
