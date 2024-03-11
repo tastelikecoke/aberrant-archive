@@ -17,8 +17,21 @@ public class ParticleActivator : MonoBehaviour
     }
     void AfterActivate()
     {
+        int pulls = PlayerPrefs.GetInt("aberrantarchive.pulls", 0);
+        PlayerPrefs.SetInt("aberrantarchive.pulls", pulls+1);
         //psystem.Stop();
-        whiteOut.SetTrigger("Begin");
 
+        if (pulls >= 20 && pulls % 20 == 1)
+        {
+            whiteOut.SetTrigger("Begin2");
+        }
+        else if (Random.Range(0, 1f) > 0.05)
+        {
+            whiteOut.SetTrigger("Begin");
+        }
+        else
+        {
+            whiteOut.SetTrigger("Begin2");
+        }
     }
 }
