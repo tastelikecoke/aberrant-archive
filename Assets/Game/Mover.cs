@@ -14,6 +14,7 @@ public class Mover : MonoBehaviour
     {
         cameraOffset = cam.transform.position - transform.position;
     }
+    private bool doingForwardMovement = false;
 
     // Update is called once per frame
     void Update()
@@ -21,12 +22,18 @@ public class Mover : MonoBehaviour
         cam.transform.position = cameraOffset + model.position;
         if(Input.GetKeyDown(KeyCode.W))
         {
-            animator.SetBool("Run", true);
+            doingForwardMovement = true;
         }
         if(Input.GetKeyUp(KeyCode.W))
         {
-            animator.SetBool("Run", false);
+            doingForwardMovement = false;
         }
+
+        if (doingForwardMovement)
+        {
+            animator.SetBool("Run", true);
+        }
+        
         if(Input.GetKey(KeyCode.A))
         {
             model.rotation = model.rotation * Quaternion.Euler(0,-1f, 0);
@@ -38,7 +45,6 @@ public class Mover : MonoBehaviour
 
         if (model.position.y < -50f)
         {
-            
             SceneManager.LoadScene("Gacha");
         }
     }
