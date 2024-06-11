@@ -5,18 +5,21 @@ Acerola game jam #0 entry.
 ### When using this repository, install this package:
 <https://assetstore.unity.com/packages/3d/animations/basic-motions-free-154271>
 
-Idk if it's possible to distribute this game while including these files so I'll just be cautious
+Idk if it's possible to distribute this game while including these files so I'll just be cautious.
 
-## Introduction
-Aberrant Archive is a brand new open world mobile strategic social game by E Xon Games! (Disclaimer: not a real entity).
+## Marketing Introduction
+Aberrant Archive is a brand new open world mobile strategic social game by E Xon Games! 
 Play now and get one free 3 star pull from the Regular recruitment banner!
 
-This game is just a demo reel for my experience in mobile game development.
+## Real Introduction
+This game is a demo reel for my experience in 3D mobile game development. My specialty is in the management of user interfaces.
+
+Disclaimer: E Xon Games is not a real entity.
 
 ## Made By:
 tastelikecoke - Code
 
-tastelikecoke - 2D Art for Usagi (using Clip Studio Paint)
+tastelikecoke - 2D Art for Usagi and Background (using Clip Studio Paint)
 
 tastelikecoke - 3D Model for Usagi and Buildings/etc. (using Blender)
 
