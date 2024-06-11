@@ -863,6 +863,9 @@ MonoBehaviour:
   player: {fileID: 1027842993}
   baseUnit: {fileID: 419264490}
   units: []
+  unused: []
+  unitIncrement: 5
+  maxDistToSpawnGround: 20
 --- !u!1 &76489408
 GameObject:
   m_ObjectHideFlags: 0
