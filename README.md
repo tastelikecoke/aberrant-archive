@@ -1,5 +1,5 @@
 # aberrant-archive
-Acerola game jam entry.
+Acerola game jam #0 entry.
 
 ## Note
 ### When using this repository, install this package:
@@ -8,14 +8,22 @@ Acerola game jam entry.
 Idk if it's possible to distribute this game while including these files so I'll just be cautious
 
 ## Introduction
-Aberrant Archive is a brand new open world mobile strategic social game published by Se Xon Games*.
+Aberrant Archive is a brand new open world mobile strategic social game by E Xon Games! (Disclaimer: not a real entity).
 Play now and get one free 3 star pull from the Regular recruitment banner!
 
+This game is just a demo reel for my experience in mobile game development.
+
 ## Made By:
-tastelikecoke - Code, Design, Art
+tastelikecoke - Code
+
+tastelikecoke - 2D Art for Usagi (using Clip Studio Paint)
+
+tastelikecoke - 3D Model for Usagi and Buildings/etc. (using Blender)
+
+tastelikecoke - UI Design and UI Animations
 
 ## Source Code:
-https://github.com/tastelikecoke/aberrant-archive
+https://github.com/tastelikecoke/aberrant-archive (you're already in this page)
 
 ## Credits To:
 Free Motion Basics by Kevin Iglesias for the Run Animation.
@@ -32,7 +40,5 @@ Hi Tech Japan by DOVA Syndrome (MFP【Marron Fields Production】) for the Main 
 
 Blue Archive, Genshin Impact and Arknights for the inspiration.
 
-*Se Xon Games is not a real entity. This game is just a demo reel for my experience in mobile game development.
-
-## Misc.
-I don't know what I'm doing. I'm so done
+## Misc:
+The hole in the randomized pooled environment is intentional.  It is supposed to be an "Aberration"!
