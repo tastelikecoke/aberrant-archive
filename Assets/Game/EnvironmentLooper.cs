@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EnvironmentLooper : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class EnvironmentLooper : MonoBehaviour
     public float unitIncrement = 5f;
     public float maxDistToSpawnGround = 20f;
 
-    public string seed = "Seed";
+    public int seed = 1;
 
     private void Start()
     {
@@ -25,6 +26,7 @@ public class EnvironmentLooper : MonoBehaviour
         var firstUnit = Instantiate(baseUnit, this.transform);
         firstUnit.SetActive(true);
         units.Add(firstUnit);
+        Random.InitState(seed);
     }
     private void Update()
     {
@@ -47,6 +49,7 @@ public class EnvironmentLooper : MonoBehaviour
                 nextPosition.x += unitIncrement;
                 nextUnit.transform.position = nextPosition;
                 nextUnit.SetActive(true);
+                nextUnit.GetComponent<EnvironmentRandomizer>().Randomize();
                 units.Add(nextUnit);
             }
 
@@ -67,6 +70,7 @@ public class EnvironmentLooper : MonoBehaviour
                 nextPosition.x -= unitIncrement;
                 nextUnit.transform.position = nextPosition;
                 nextUnit.SetActive(true);
+                nextUnit.GetComponent<EnvironmentRandomizer>().Randomize();
                 units.Insert(0, nextUnit);
             }
             
