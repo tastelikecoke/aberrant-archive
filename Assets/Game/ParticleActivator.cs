@@ -25,7 +25,7 @@ public class ParticleActivator : MonoBehaviour
         {
             whiteOut.SetTrigger("Begin2");
         }
-        else if (Random.Range(0, 1f) > 0.9)
+        else if (Random.Range(0, 1f) > 0.05)
         {
             whiteOut.SetTrigger("Begin");
         }
