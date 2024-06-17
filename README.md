@@ -1,7 +1,7 @@
 # aberrant-archive
 [Parody] a brand new open world mobile strategic social game. play for free now!
 
-This is an [Acerola game jam #0](https://itch.io/jam/acerola-jam-0) entry.
+This is an [Acerola game jam #0](https://itch.io/jam/acerola-jam-0/rate/2574915) entry.
 
 [Play it on itch.io](https://tastelikecoke.itch.io/aberrant-archive)
 
