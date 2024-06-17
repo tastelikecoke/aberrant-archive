@@ -1,11 +1,17 @@
 # aberrant-archive
-Acerola game jam #0 entry.
+[Parody] a brand new open world mobile strategic social game. play for free now!
 
-## Note
-### When using this repository, install this package:
+This is an [Acerola game jam #0](https://itch.io/jam/acerola-jam-0) entry.
+
+[Play it on itch.io](https://tastelikecoke.itch.io/aberrant-archive)
+
+## Note: When using this repository, install this package:
 <https://assetstore.unity.com/packages/3d/animations/basic-motions-free-154271>
 
-Idk if it's possible to distribute this game while including these files so I'll just be cautious.
+Due to the [rules of the game jam](https://itch.io/jam/acerola-jam-0/topic/3570888/rules-update-38):
+> After doing my legal due diligence I have learned that it is actually against many platforms' terms of service to redistribute even free assets. So, my rule asking for your game to be hosted on GitHub is technically encouraging all participants to break the terms of service of platforms like the Unity and Unreal marketplace, and I really don't want to be sued because that would suck.
+
+I don't know if it's possible to distribute this game while including these files so I'll just be cautious and not include them.  But these assets are necessary for the walking mechanic.
 
 ## Marketing Introduction
 Aberrant Archive is a brand new open world mobile strategic social game by E Xon Games! 
